@@ -1,0 +1,83 @@
+.PasswordInput {
+  background: rgb(253 253 253);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+
+  padding: 4px;
+  padding-left: 8px;
+  padding-bottom: 2px;
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      font-family: Roboto-Medium;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.7);
+      letter-spacing: 0.15px;
+      line-height: 12px;
+      margin: 0;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: rgba(0, 0, 0, 0.7);
+      .eyeIcon {
+        cursor: pointer;
+        width: 12px;
+      }
+      .show {
+        margin: 0;
+        font-family: Roboto-Medium;
+        font-size: 12px;
+        letter-spacing: 0.15px;
+        text-align: right;
+        line-height: 16px;
+        user-select: none;
+      }
+    }
+  }
+  .inputBody {
+    margin-right: 4px;
+    .top {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 2px;
+      }
+      input {
+        background: rgb(253 253 253);
+
+        width: 100%;
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0.15px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
+      .cross {
+        cursor: pointer;
+      }
+    }
+    .bottom {
+      .errorMsg {
+        font-family: RobotoCondensed-Italic;
+        font-size: 12px;
+        color: #ff0000;
+        letter-spacing: 0.15px;
+        line-height: 12px;
+        margin: 0;
+        margin-bottom: 4px;
+      }
+    }
+    &.focus {
+      border-bottom: 2px solid #263a91;
+    }
+  }
+}

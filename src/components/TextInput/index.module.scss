@@ -1,0 +1,61 @@
+.TextInput {
+  background: rgb(253 253 253);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+
+  padding: 4px;
+  padding-left: 8px;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+
+  .label {
+    font-family: Roboto-Medium;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.15px;
+    line-height: 12px;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+  .inputBody {
+    margin-right: 4px;
+    &.focus {
+      border-bottom: 2px solid #263a91;
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 2px;
+      }
+      input {
+        background: rgb(253 253 253);
+
+        width: 100%;
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0.15px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
+      .cross {
+        cursor: pointer;
+      }
+    }
+    .bottom {
+      .errorMsg {
+        font-family: RobotoCondensed-Italic;
+        font-size: 12px;
+        color: #ff0000;
+        letter-spacing: 0.15px;
+        line-height: 12px;
+        margin: 0;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
