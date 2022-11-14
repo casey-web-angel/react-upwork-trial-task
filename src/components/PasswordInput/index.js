@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import cs from "classnames";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
 import styles from "./index.module.scss";
